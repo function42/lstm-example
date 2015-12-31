@@ -93,7 +93,6 @@ class LSTMCell:
             forward_step,
             sequences=x,
             truncate_gradient=-1,
-            n_steps=10,
             outputs_info=[
                       dict(initial=T.zeros(self.hiddenSize)),
                       dict(initial=T.zeros(self.hiddenSize))])
